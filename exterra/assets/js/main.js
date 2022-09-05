@@ -110,6 +110,10 @@ $(document).ready(function() {
     });
 
     $(this).trigger('change');
+
+    $("hr").on('click', function() {
+        $(this).toggleClass('opened');
+    });
 });
 
 $(document).on('change keyup', function() {
