@@ -47,7 +47,7 @@ hr::after {
   transition: 1s;
 }
 hr.opened::after {
-  transform: scaleY(-1);
+  transform: rotate(-900deg);
 }
 
 .field-group {

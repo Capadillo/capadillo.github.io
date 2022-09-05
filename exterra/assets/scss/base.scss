@@ -53,7 +53,8 @@ hr {
     }
 
     &.opened::after {
-        transform: scaleY(-1);
+        transform: rotate(-900deg);
+        //transform: scaleY(-1);
     }
 }
 
