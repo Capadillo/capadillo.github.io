@@ -1,6 +1,6 @@
 {
-    "name": "Hello World",
-    "short_name": "Hello",
+    "name": "Capadillo.IO",
+    "short_name": "Capadillo.IO",
     "icons": [{
             "src": "/assets/images/icon-128.png",
             "sizes": "128x128",
