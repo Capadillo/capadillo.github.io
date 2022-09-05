@@ -26,6 +26,7 @@ h2 {
 }
 
 hr {
+  --rotation: 0deg;
   background-color: #3B9AE1;
   border: 1px solid #4f4f4f;
   border-radius: 0.1875rem;
@@ -44,10 +45,8 @@ hr::after {
   left: calc(50% - 0.5rem);
   top: calc(50% - 0.25rem);
   position: absolute;
-  transition: 1s;
-}
-hr.opened::after {
-  transform: rotate(-900deg);
+  transition: transform 0.75s ease;
+  transform: rotate(var(--rotation));
 }
 
 .field-group {
@@ -63,6 +62,9 @@ hr.opened::after {
   font-weight: 700;
   grid-column: 1/span 2;
   padding-bottom: 0.125rem;
+}
+.field-group .title small {
+  color: #3B9AE1;
 }
 .field-group label {
   font-size: 0.75rem;

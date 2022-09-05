@@ -98,8 +98,8 @@ $(document).ready(function() {
     });
 
     $("textarea[readonly]").click(function() {
-        $(this).prev(".title").children("small").fadeIn(1000, function() {
-            $(this).fadeOut(1000);
+        $(this).prev(".title").children("small").fadeIn(0, function() {
+            $(this).fadeOut(1500);
         });
 
         var $temp = $("<input>");
@@ -111,8 +111,9 @@ $(document).ready(function() {
 
     $(this).trigger('change');
 
-    $("hr").on('click', function() {
-        $(this).toggleClass('opened');
+    $("hr").click(function () {
+        let counter = parseInt($(this).css('--rotation').slice(0, -3)) + 180;
+        $(this).css('--rotation', counter + "deg");
     });
 });
 
