@@ -94,6 +94,7 @@ $(document).ready(function() {
 
     $("textarea[readonly]").each(function() {
         $(this)[0].default_text = $(this).html();
+        $(this).height($(this)[0].scrollHeight - 16);
     });
 
     $("textarea[readonly]").click(function() {

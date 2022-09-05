@@ -18,7 +18,7 @@ body {
 .container {
   margin: auto;
   max-width: 60rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 h2 {
@@ -65,6 +65,9 @@ hr::after {
   font-weight: 700;
   padding-bottom: 0.125rem;
 }
+.field-group textarea {
+  grid-column: 1/-1;
+}
 .field-group .gutter-top {
   margin-top: 0.5rem;
 }
@@ -99,9 +102,9 @@ input[type=checkbox] + label {
 }
 
 textarea {
-    grid-column: 1/-1;
-    text-align: justify;
-    resize: none;
+  grid-columns: 1/-1;
+  resize: none;
+  text-align: justify;
 }
 
 input[type=checkbox] {
