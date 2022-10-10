@@ -35,6 +35,19 @@ class QuoteCalculator {
 
         $(selector).val(total.toFixed(2));
     }
+
+    calculate_gst(selector)
+    {
+        let total = 0.00;
+
+        this.item.forEach((i, n) => {
+            total += this.calculate_line(i.price, i.quantity);
+        });
+
+        total += total * 0.1;
+
+        $(selector).val(total.toFixed(2));
+    }
 }
 
 // ------------------------------------------------------------
@@ -136,4 +149,5 @@ $(document).on('change keyup', function() {
 
     calculateDrill();
     qc.calculate('[name="total"]');
+    qc.calculate_gst('[name="total-gst"]');
 });
