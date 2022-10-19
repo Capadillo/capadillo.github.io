@@ -1,0 +1,92 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+    background-color: #1C1B22;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: min(60rem, 100% - 4rem);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+textarea {
+    border: 0.25em solid #1C1B22;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.75);
+    display: block;
+    font: inherit;
+    height: 10em;
+    width: 100%;
+    padding: 0.5em;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.notes {
+    list-style: none;
+    padding: 0;
+}
+
+.notes li {
+    background-color: white;
+    border: 0.25em solid #1C1B22;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.75);
+    display: block;
+    font: inherit;
+    width: 100%;
+    padding: 0.5em;
+    resize: none;
+}
+
+.card {
+    flex: 0 1 calc(100%);
+}
+
+.card img {
+    border: 0.25em solid #1C1B22;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.75);
+    display: block;
+    width: 100%;
+}
+
+.card img:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (min-width: 40em) {
+    .card {
+        flex: 0 1 calc((100% / 3) - ((1em / 3) * 2));
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .card {
+        flex: 0 1 calc((100% / 4) - ((1em / 4) * 3));
+    }
+}
