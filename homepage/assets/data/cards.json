@@ -1,62 +1,62 @@
 [
     {
         "alt": "Disney Plus",
-        "img": "/assets/images/disney.png",
+        "img": "/homepage/assets/images/disney.png",
         "url": "https://www.disneyplus.com/en-gb/home"
     },
     {
         "alt": "Netflix",
-        "img": "/assets/images/netflix.png",
+        "img": "/homepage/assets/images/netflix.png",
         "url": "https://www.netflix.com/au/"
     },
     {
         "alt": "Prime Video",
-        "img": "/assets/images/prime.png",
+        "img": "/homepage/assets/images/prime.png",
         "url": "https://www.primevideo.com/"
     },
     {
         "alt": "YouTube",
-        "img": "/assets/images/youtube.png",
+        "img": "/homepage/assets/images/youtube.png",
         "url": "https://www.youtube.com/"
     },
     {
         "alt": "Crunchyroll",
-        "img": "/assets/images/crunchyroll.png",
+        "img": "/homepage/assets/images/crunchyroll.png",
         "url": "https://www.crunchyroll.com/"
     },
     {
         "alt": "DoorDash",
-        "img": "/assets/images/doordash.png",
+        "img": "/homepage/assets/images/doordash.png",
         "url": "https://www.doordash.com/"
     },
     {
         "alt": "Menulog",
-        "img": "/assets/images/menulog.png",
+        "img": "/homepage/assets/images/menulog.png",
         "url": "https://www.menulog.com.au"
     },
     {
         "alt": "Wowhead",
-        "img": "/assets/images/wowhead.png",
+        "img": "/homepage/assets/images/wowhead.png",
         "url": "https://www.wowhead.com"
     },
     {
         "alt": "Outlook",
-        "img": "/assets/images/outlook.png",
+        "img": "/homepage/assets/images/outlook.png",
         "url": "https://outlook.live.com/owa/"
     },
     {
         "alt": "Google Sheets",
-        "img": "/assets/images/sheets.png",
+        "img": "/homepage/assets/images/sheets.png",
         "url": "https://sheets.google.com/"
     },
     {
         "alt": "Flick Employee Services Portal",
-        "img": "/assets/images/flick.png",
+        "img": "/homepage/assets/images/flick.png",
         "url": "https://esp.cloud.micropay.com.au/esp50470/"
     },
     {
         "alt": "WiFi",
-        "img": "/assets/images/wifi.png",
+        "img": "/homepage/assets/images/wifi.png",
         "url": "http://192.168.1.1/"
     }
 ]
