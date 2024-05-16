@@ -95,14 +95,14 @@ $(() => {
 });
 
 $(document).ajaxStop(function() {
-    $("a").on("click", function(e) {
+    $("a").on("mouseup", function(e) {
         let id = this.id;
         let cookie = Number(get_cookie(`link${id}`) ?? 0);
         set_cookie(`link${id}`, ++cookie);
     });
 });
 
-$("#deleteAll").on('click', function() {
+$("#deleteAll").on('mouseup', function() {
     const cookies = document.cookie.split(";");
 
     for (let i = 0; i < cookies.length; i++) {
