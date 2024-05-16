@@ -1,9 +1,56 @@
 [
     {
-        "text": "Flick Portal",
-        "url": "https://flickpestcon.mfcloudau.com/tms"
+        "img": "./assets/images/disney2.png",
+        "text": "Disney Plus",
+        "url": "https://www.disneyplus.com/en-gb/home"
     },
     {
+        "img": "./assets/images/netflix.png",
+        "text": "Netflix",
+        "url": "https://www.netflix.com/au/"
+    },
+    {
+        "img": "./assets/images/prime.png",
+        "text": "Prime Video",
+        "url": "https://www.primevideo.com/"
+    },
+    {
+        "img": "./assets/images/youtube.png",
+        "text": "YouTube",
+        "url": "https://www.youtube.com/"
+    },
+    {
+        "img": "./assets/images/crunchyroll.png",
+        "text": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/"
+    },
+    {
+        "img": "./assets/images/doordash.png",
+        "text": "DoorDash",
+        "url": "https://www.doordash.com/"
+    },
+    {
+        "img": "./assets/images/outlook.png",
+        "text": "Outlook",
+        "url": "https://outlook.live.com/owa/"
+    },
+    {
+        "img": "./assets/images/sheets.png",
+        "text": "Google Sheets",
+        "url": "https://sheets.google.com/"
+    },
+    {
+        "img":  "./assets/images/placeholder.png",
+        "text": "Flick Portal",
+        "url":  "https://flickpestcon.mfcloudau.com/tms"
+    },
+    {
+        "img":  "./assets/images/placeholder.png",
+        "text": "Pirate Software",
+        "url": "https://twitch.tv/PirateSoftware/"
+    },
+    {
+        "img":  "./assets/images/placeholder.png",
         "text": "Proposal Calculator",
         "url": "https://capadillo.github.io/wsnh/"
     }

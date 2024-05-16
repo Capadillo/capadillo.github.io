@@ -54,3 +54,9 @@ $(() => {
     load('./assets/data/cards.json', displayCards, displayError);
     load('./assets/data/links.json', displayLinks, displayError);
 });
+
+// $(document).ajaxStop(function() {
+//     $( "a" ).on( "click", function(e) {
+//         console.log(this.attr('href'));
+//     });
+// });

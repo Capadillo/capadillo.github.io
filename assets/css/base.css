@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --background-color: #1C1B22;
@@ -6,11 +6,11 @@
     --border-radius: 0.5rem;
     --box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 1);
     --container-width: min(100% - var(--padding) * 2, 50rem);
-    --highlight-color: #d6a75c;
+    --highlight-color: #ffbc3e;
     --padding: 1.5rem;
     --search-color: var(--background-color);
-    --search-font-family: "Poetsen One", sans-serif;
-    --search-font-size: 1.5rem;
+    --search-font-family: "Acme", serif;
+    --search-font-size: 1rem;
 }
 
 body {
@@ -62,7 +62,7 @@ main {
         font-size: var(--search-font-size);
         font-weight: 400;
         outline: none;
-        padding: 0.75rem;
+        padding: 1rem;
         text-align: center;
         width: 100%;
     }
@@ -105,14 +105,15 @@ h1 {
 h2 {
     color: var(--highlight-color);
     font-family: var(--search-font-family);
-    font-size: 1.75rem;
-    margin-block-end: calc(4px + var(--padding));
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-block-end: calc(var(--padding) + 8px);
     position: relative;
     text-align: center;
 
     &::after {
         background: linear-gradient(to right, transparent, var(--highlight-color), transparent);
-        bottom: -4px;
+        bottom: -8px;
         content: " ";
         display: block;
         position: absolute;
@@ -128,8 +129,6 @@ hr {
     display: block;
     height: 2px;
     margin-block: var(--padding);
-    margin-inline: auto;
-    max-width: var(--container-width);
     width: 100%;
 }
 
