@@ -179,6 +179,7 @@ button {
     color: color-mix(in srgb, var(--background-color) 75%, black);
     cursor: pointer;
     display: block;
+    margin-block: var(--padding);
     margin-inline: auto;
     padding: calc(var(--padding) / 2);
 }
