@@ -1,3 +1,7 @@
+// --------------------------------------------------
+// Flash Message
+// --------------------------------------------------
+
 function flashMessage(message) {
     // var offset = $("#flash")[0].getBoundingClientRect();
 
@@ -7,6 +11,10 @@ function flashMessage(message) {
         setTimeout(function() { $("#flash").fadeOut(); }, 1250);
     });
 }
+
+// --------------------------------------------------
+// Cookie Management
+// --------------------------------------------------
 
 function get_cookies() {
     let output = [];
@@ -30,6 +38,10 @@ function set_cookie(key, value) {
     document.cookie = `${key}=${value}`;
 }
 
+// --------------------------------------------------
+// AJAX File Loader
+// --------------------------------------------------
+
 function load(url, onSuccess, onError) {
     $.ajax({
         url: url,
@@ -47,6 +59,10 @@ function load(url, onSuccess, onError) {
         }
     });
 }
+
+// --------------------------------------------------
+// Display Functions
+// --------------------------------------------------
 
 function displayLinks(statusCode, data) {
     const sortedData = $.each(data, (i, row) => {
@@ -67,15 +83,19 @@ function displayLinks(statusCode, data) {
 }
 
 function displayError(statusText, exception) {
-    console.error(statusText + ": " + exception);
+    flashMessage(statusText + ": " + exception);
 }
+
+// --------------------------------------------------
+// Events
+// --------------------------------------------------
 
 $(() => {
     load('./assets/data/links.json', displayLinks, displayError);
 });
 
 $(document).ajaxStop(function() {
-    $("a").on("mouseup touchend", function(e) {
+    $("a").on("click", function(e) {
         let id = this.id;
         let cookie = Number(get_cookie(`link${id}`) ?? 0);
         set_cookie(`link${id}`, ++cookie);
