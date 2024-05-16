@@ -1,4 +1,6 @@
 function flashMessage(message) {
+    // var offset = $("#flash")[0].getBoundingClientRect();
+
     $("#flash").html(message);
 
     $("#flash").fadeIn(function() {
