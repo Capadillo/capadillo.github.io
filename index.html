@@ -21,6 +21,13 @@
         <link rel="stylesheet" href="./assets/css/base.css">
     </head>
     <body>
+        <div class="search">
+            <form method="GET" action="https://www.google.com/search">
+                <input type="text" name="q">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
         <div class="gallery" id="cards">
             <script type="text/template" id="cards-template">
                 <a class="card" target="_top" href="{{url}}">
