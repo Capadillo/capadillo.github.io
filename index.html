@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Capadillo.IO</title>
+        <title>Homepage</title>
         <!-- browser -->
         <link rel="manifest" href="/manifest.json">
         <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
@@ -17,17 +17,19 @@
         <meta name="msapplication-TileImage" content="/assets/images/icon-144.png">
         <meta name="msapplication-TileColor" content="#FFFFFF">
         <!-- styles -->
-        <link rel="stylesheet" href="/assets/css/master.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
     </head>
-    <body class="fullscreen">
-        <div class="container">
-            <h1 class="title">Capadillo.IO</h1>
-            <h2 class="subtitle">Quote Calculator</h2>
-            <a href="/exterra/" class="button wide">Exterra</a>
-            <h2 class="subtitle">Misc.</h2>
-            <a href="/homepage/" class="button wide">Homepage</a>
+    <body>
+        <div class="gallery" id="cards">
+            <script type="text/template" id="cards-template">
+                <a class="card" target="_top" href="{{url}}">
+                    <img src="{{img}}" alt="{{alt}}">
+                </a>
+            </script>
         </div>
 
-        <script src="/assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="./assets/js/custom.js"></script>
     </body>
 </html>
