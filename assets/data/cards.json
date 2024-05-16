@@ -30,11 +30,6 @@
         "url": "https://www.doordash.com/"
     },
     {
-        "alt": "DIM",
-        "img": "./assets/images/DIM.png",
-        "url": "https://app.destinyitemmanager.com/"
-    },
-    {
         "alt": "Outlook",
         "img": "./assets/images/outlook.png",
         "url": "https://outlook.live.com/owa/"
