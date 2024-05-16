@@ -31,10 +31,26 @@ function displayCards(statusCode, data) {
     });
 }
 
+function displayLinks(statusCode, data) {
+    let parent   = '#links';
+    let template = '#links-template';
+
+    $.each(data, (i, row) => {
+        let temp = $(template).html();
+
+        $.each(row, (key, value) => {
+            temp = temp.replace("{{" + key + "}}", value);
+        });
+
+        $(parent).append(temp);
+    });
+}
+
 function displayError(statusText, exception) {
     console.error(statusText + ": " + exception);
 }
 
 $(() => {
     load('./assets/data/cards.json', displayCards, displayError);
+    load('./assets/data/links.json', displayLinks, displayError);
 });

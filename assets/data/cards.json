@@ -38,10 +38,5 @@
         "alt": "Google Sheets",
         "img": "./assets/images/sheets.png",
         "url": "https://sheets.google.com/"
-    },
-    {
-        "alt": "Flick ESP",
-        "img": "./assets/images/flick.png",
-        "url": "https://ess.cloud.micropay.com.au/#/"
     }
 ]
