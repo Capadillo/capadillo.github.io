@@ -19,8 +19,10 @@
     "display":"fullscreen",
     "dir":"auto",
     "lang":"en-AU",
+    "name":"Capadillo's Homepage",
+    "short_name":"Cappy's Home",
     "start_url":"https://capadillo.github.io/",
     "scope":"https://capadillo.github.io/",
-    "id":"capadillohomepage",
-    "description":"Capadillo's Homepage"
+    "description":"Capadillo's personal homepage application available to the internet.",
+    "id":"cappyhome"
 }
