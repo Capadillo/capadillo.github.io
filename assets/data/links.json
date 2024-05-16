@@ -2,5 +2,9 @@
     {
         "text": "Flick Portal",
         "url": "https://flickpestcon.mfcloudau.com/tms"
+    },
+    {
+        "text": "Proposal Calculator",
+        "url": "https://capadillo.github.io/wsnh/"
     }
 ]
