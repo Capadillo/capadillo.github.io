@@ -41,7 +41,7 @@ function load(url, onSuccess, onError) {
 function displayLinks(statusCode, data) {
     const sortedData = $.each(data, (i, row) => {
         data[i]['clicks'] = Number(get_cookie(`link${row.id}`) ?? 0);
-    }).sort((a, b) => b.clicks - a.clicks);
+    }).sort((a, b) => b.clicks - a.clicks || Number(a.id) - Number(b.id));
 
     $.each(sortedData, (i, row) => {
         let temp = $((i < 8 ? '#cards-template' : '#links-template')).html();

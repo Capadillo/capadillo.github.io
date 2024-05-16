@@ -32,7 +32,7 @@ main {
 
 .portrait {
     background-image: url("../images/portrait.png");
-    background-position: center 55%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--border-radius);
@@ -179,7 +179,10 @@ button {
     color: color-mix(in srgb, var(--background-color) 75%, black);
     cursor: pointer;
     display: block;
-    margin-block: var(--padding);
     margin-inline: auto;
     padding: calc(var(--padding) / 2);
+
+    &#deleteAll {
+        margin-block: var(--padding);
+    }
 }
