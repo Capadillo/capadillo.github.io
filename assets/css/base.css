@@ -10,7 +10,7 @@
     --padding: 1.5rem;
     --search-color: var(--background-color);
     --search-font-family: "Poetsen One", sans-serif;
-    --search-font-size: 2rem;
+    --search-font-size: 1.5rem;
 }
 
 body {
@@ -54,7 +54,7 @@ main {
     }
 
     & input {
-        background: color-mix(in srgb, var(--background-color) 50%, white);;
+        background: color-mix(in srgb, var(--background-color) 10%, white);;
         border: none; 
         color: var(--search-color);
         display: block;
