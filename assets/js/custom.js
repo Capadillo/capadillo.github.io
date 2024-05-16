@@ -1,3 +1,11 @@
+function flashMessage(message) {
+    $("#flash").html(message);
+
+    $("#flash").fadeIn(function() {
+        setTimeout(function() { $("#flash").fadeOut(); }, 1250);
+    });
+}
+
 function get_cookies() {
     let output = [];
 
@@ -67,7 +75,6 @@ $(document).ajaxStop(function() {
         let id = this.id;
         let cookie = Number(get_cookie(`link${id}`) ?? 0);
         set_cookie(`link${id}`, ++cookie);
-        console.log(get_cookies());
     });
 });
 
@@ -81,5 +88,5 @@ $("#deleteAll").on('click', function() {
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 
-    console.log("-- Cookies deleted! --")
+    flashMessage('Cookies deleted!');
 });
