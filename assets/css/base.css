@@ -2,30 +2,33 @@
 
 :root {
     --background-color: #1C1B22;
+    --body-font-family: "Roboto", sans-serif;
     --border-radius: 0.5rem;
+    --box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 1);
     --container-width: min(100% - var(--padding) * 2, 50rem);
     --highlight-color: #d6a75c;
     --padding: 1.5rem;
     --search-color: var(--background-color);
     --search-font-family: "Poetsen One", sans-serif;
     --search-font-size: 2rem;
-    --body-font-family: "Roboto", sans-serif;
 }
 
 body {
     background-color: var(--background-color);
     font-family: var(--body-font-family);
-    padding-block: var(--padding);
+    margin-block: var(--padding);
+}
+
+main {
+    margin-inline: auto;
+    max-width: var(--container-width);
 }
 
 .portrait {
-    border: 3px solid var(--background-color);
     border-radius: var(--border-radius);
-    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 1);
+    box-shadow: var(--box-shadow);
     margin-inline: auto;
     max-width: 400px;
-    /* outline: 3px solid var(--background-color); */
-    /* outline-offset: -6px; */
     overflow: hidden;
 
     & img {
@@ -38,14 +41,12 @@ body {
     display: flex;
     justify-content: center;
     margin-block: var(--padding);
-    margin-inline: auto;
-    /* max-width: min(var(--container-width), 400px); */
-    max-width: var(--container-width);
+    width: 100%;
 
     & form {
         border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
         display: grid;
-        grid-gap: 1px;
         grid-template-columns: max-content auto max-content;
         height: 100%;
         overflow: hidden;
@@ -53,7 +54,7 @@ body {
     }
 
     & input {
-        background: white;
+        background: color-mix(in srgb, var(--background-color) 50%, white);;
         border: none; 
         color: var(--search-color);
         display: block;
@@ -80,12 +81,11 @@ body {
     grid-gap: var(--padding);
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     margin-block: var(--padding);
-    margin-inline: auto;
-    max-width: var(--container-width);
+    width: 100%;
 
     & .card {
         background-color: rgba(0, 0, 0, 0.5);
-        box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.75);
+        box-shadow: var(--box-shadow);
         border-radius: var(--border-radius);
 
         &:hover {
@@ -99,8 +99,6 @@ h1 {
     font-family: var(--search-font-family);
     font-size: 2.75rem;
     margin-block-end: calc(4px + var(--padding));
-    margin-inline: auto;
-    max-width: var(--container-width);
     text-align: center;
 }
 
@@ -109,8 +107,6 @@ h2 {
     font-family: var(--search-font-family);
     font-size: 1.75rem;
     margin-block-end: calc(4px + var(--padding));
-    margin-inline: auto;
-    max-width: var(--container-width);
     position: relative;
     text-align: center;
 
@@ -139,9 +135,8 @@ hr {
 
 .links {
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     list-style: none;
-    margin-inline: auto;
-    max-width: var(--container-width);
     overflow: hidden;
 
     li {
