@@ -13,6 +13,12 @@
     --search-font-size: 1rem;
 }
 
+html {
+    align-items: center;
+    display: grid;
+    height: 100%;
+}
+
 body {
     background-color: var(--background-color);
     font-family: var(--body-font-family);
@@ -25,11 +31,16 @@ main {
 }
 
 .portrait {
+    background-image: url("../images/portrait.png");
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin-inline: auto;
-    max-width: 400px;
+    min-height: 240px;
     overflow: hidden;
+    width: 100%;
 
     & img {
         display: block;
@@ -158,4 +169,16 @@ hr {
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
+}
+
+button {
+    /* aspect-ratio: 1; */
+    border: none;
+    background: color-mix(in srgb, var(--background-color) 98%, white);
+    border-radius: var(--border-radius);
+    color: color-mix(in srgb, var(--background-color) 75%, black);
+    cursor: pointer;
+    display: block;
+    margin-inline: auto;
+    padding: calc(var(--padding) / 2);
 }

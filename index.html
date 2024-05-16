@@ -13,7 +13,7 @@
     <body>
         <main>
             <div class="portrait">
-                <img src="./assets/images/portrait.png" alt="">
+                <!-- <img src="./assets/images/portrait.png" alt=""> -->
             </div>
 
             <div class="search">
@@ -26,23 +26,28 @@
 
             <div class="gallery" id="cards">
                 <script type="text/template" id="cards-template">
-                    <a class="card" target="_blank" href="{{url}}">
-                        <img src="{{img}}" alt="{{alt}}">
+                    <a id="{{id}}" class="card" target="_blank" href="{{href}}">
+                        <img src="{{image}}" alt="{{text}}">
                     </a>
                 </script>
             </div>
 
-            <h2>Useful Links</h2>
+            <h2>Links</h2>
             <ul class="links" id="links">
                 <script type="text/template" id="links-template">
                     <li>
-                        <a href="{{url}}" target="_blank">{{text}}</a>
+                        <a id="{{id}}" href="{{href}}" target="_blank">{{text}}</a>
                     </li>
                 </script>
             </ul>
 
             <hr>
         </main>
+
+        <button id="deleteAll">
+            <!-- <span class="material-symbols-rounded">delete_history</span> -->
+            Reset Click Counter
+        </button>
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="./assets/js/custom.js"></script>
