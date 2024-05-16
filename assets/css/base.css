@@ -112,9 +112,10 @@ h2 {
     margin-inline: auto;
     max-width: var(--container-width);
     position: relative;
+    text-align: center;
 
     &::after {
-        background: linear-gradient(to right, var(--highlight-color), transparent);
+        background: linear-gradient(to right, transparent, var(--highlight-color), transparent);
         bottom: -4px;
         content: " ";
         display: block;
@@ -122,6 +123,18 @@ h2 {
         height: 2px;
         width: 100%;
     }
+}
+
+hr {
+    background: linear-gradient(to right, transparent, var(--highlight-color), transparent);
+    border: unset;
+    content: " ";
+    display: block;
+    height: 2px;
+    margin-block: var(--padding);
+    margin-inline: auto;
+    max-width: var(--container-width);
+    width: 100%;
 }
 
 .links {
