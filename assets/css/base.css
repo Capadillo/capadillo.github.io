@@ -200,3 +200,11 @@ button {
         margin-block: var(--padding);
     }
 }
+
+#order {
+    background: color-mix(in srgb, var(--background-color) 98%, white);
+    border-radius: var(--border-radius);
+    color: white;
+    margin-block: var(--padding);
+    padding: var(--padding);
+}

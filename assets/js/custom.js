@@ -53,6 +53,8 @@ function displayLinks(statusCode, data) {
         data[i]['clicks'] = Number(get_cookie(`link${row.id}`) ?? 0);
     }).sort((a, b) => b.clicks - a.clicks || Number(a.id) - Number(b.id));
 
+    $('#order').text(JSON.stringify(sortedData, null, 2));
+
     $.each(sortedData, (i, row) => {
         let temp = $((i < 8 ? '#cards-template' : '#links-template')).html();
 
