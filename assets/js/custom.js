@@ -35,7 +35,7 @@ function get_cookie(key) {
 }
 
 function set_cookie(key, value) {
-    document.cookie = `${key}=${value}`;
+    document.cookie = `${key}=${value}; expires=Thu, 01 Jan 2999 00:00:00 GMT`;
 }
 
 function delete_all_cookies() {
@@ -45,7 +45,7 @@ function delete_all_cookies() {
         const cookie = cookies[i];
         const eqPos = cookie.indexOf("=");
         const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
 }
 
