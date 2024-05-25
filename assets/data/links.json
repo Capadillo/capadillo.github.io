@@ -49,20 +49,26 @@
     },
     {
         "id": "09",
-        "image":  "./assets/images/flick.png",
+        "image": "./assets/images/flick.png",
         "text": "Flick Portal",
         "href":  "https://flickpestcon.mfcloudau.com/tms"
     },
     {
         "id": "10",
-        "image":  "./assets/images/pirate.png",
+        "image": "./assets/images/pirate.png",
         "text": "Pirate Software",
         "href": "https://twitch.tv/PirateSoftware/"
     },
     {
         "id": "11",
-        "image":  "./assets/images/placeholder.png",
+        "image": "./assets/images/placeholder.png",
         "text": "Proposal Calculator",
         "href": "https://capadillo.github.io/wsnh/"
+    },
+    {
+        "id": "12",
+        "image": "./assets/images/budget.png",
+        "text": "Budget",
+        "href": "https://docs.google.com/spreadsheets/d/1UBhp9XOcmr8VrH6tIpSg6KxCMtWz0qhlv8mT2yuf8wc/"
     }
 ]
