@@ -45,20 +45,21 @@ main {
 }
 
 .portrait {
+    align-items: stretch;
+    aspect-ratio: calc(4 / 1);
     background-image: url("../images/portrait.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    display: grid;
+    justify-content: center;
     margin-inline: auto;
-    min-height: 240px;
-    overflow: hidden;
     width: 100%;
 
-    & img {
-        display: block;
-        width: 100%;
+    & .logo path {
+        fill: rgba(0, 0, 0, 0.75) !important;
     }
 }
 
